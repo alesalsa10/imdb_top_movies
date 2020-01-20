@@ -27,6 +27,8 @@ def get_info():
 def save_to_csv():
     with open('movies.csv', 'w', newline='') as myfile:
         writer = csv.writer(myfile)
+        headers = ['Name', 'URL', 'Genre']
+        writer.writerow(headers)
         writer.writerows(information)
 
 get_info()
