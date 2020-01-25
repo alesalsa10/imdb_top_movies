@@ -20,8 +20,8 @@ def get_info():
 
             rating = rating
 
-            info = [title, full_url, genre]
-            information.append(info)
+            movie_info = [title, full_url, genre]
+            information.append(movie_info)
             
 
 def save_to_csv():
